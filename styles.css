@@ -7,6 +7,7 @@
     --btn-color:hsl(30, 25%, 89%);
     --orange-btn: hsl(6, 63%, 50%);
     --orange-box-shadow:hsl(6, 70%, 34%);
+    --button-color-black: hsl(0, 3%, 17%);
 }
 
 *{
@@ -27,14 +28,12 @@
 
 .calculator-container {
     width: 40%;
-    background-color: rgb(43, 59, 43);
 }
 
 .header {
     width: 100%;
     height: 15vh;
     font-size: 1.8vw;
-    background-color: #a85a5a;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -128,7 +127,7 @@ input:checked {
 .num-btn, .operator-btn {
     height: 10vh;
     width: 20%;
-    color: var(--very-dark-grayish-blue);
+    color: var(--button-color-black);
     font-size: 4vw;
     font-weight: 700;
     line-height: 3.7rem;
@@ -153,12 +152,10 @@ input:checked {
 
 .reset-btn {
     height: 12vh;
-    width: 50%;
+    width: 100%;
     font-size: 2vw;
     font-weight: 700;
     line-height: 2.6rem;
-    color: var(--white);
-    padding: 1.3rem 2.9rem 1.1rem 3.2rem;
     background-color: var(--light-blue-background);
     color: var(--white);
     border-radius: 1rem;
@@ -168,15 +165,24 @@ input:checked {
 
 .equal-to-btn {
     height: 12vh;
-    width: 50%;
+    width: 100%;
     font-size: 2vw;
     font-weight: 700;
     line-height: 2.6rem;
-    color: var(--white);
-    padding: 1.3rem 2.9rem 1.1rem 3.2rem;
     background-color: var(--orange-btn);
     color: var(--white);
     border-radius: 1rem;
     border: none;
     box-shadow: inset 0px -4px 0px var(--orange-box-shadow);
+}
+
+.num-btn:active,
+.operator-btn:active {
+  transform: translateY(1.1rem);
+}
+
+.delete-btn:active,
+.reset-btn:active,
+.equal-to-btn:active {
+  transform: translateY(1.1rem);
 }
