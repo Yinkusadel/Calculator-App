@@ -97,7 +97,9 @@ input:checked {
     margin-top: 5px;
     border-radius: 10px;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: aliceblue;
 }
 
 .user-input {
