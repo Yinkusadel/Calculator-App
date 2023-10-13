@@ -20,8 +20,3 @@ let numBtn = document.querySelector('.num-btn');
 let userInput = document.querySelector('.user-input');
 let logInput = document.querySelector('.log-input');
 
-
-function outputResult(result, text) {
-    userInput.textContent = result;
-    logInput.textContent = text;
-  }
